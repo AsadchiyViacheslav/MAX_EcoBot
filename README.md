@@ -39,7 +39,7 @@ docker build -t eco-bot .
 
 4. **Запуск контейнера**
 ```bash
-docker run -d --name eco-bot .env eco-bot
+docker run -d --name eco-bot eco-bot
 ```
 
 5. **Использование**
