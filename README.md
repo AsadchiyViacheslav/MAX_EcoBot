@@ -21,8 +21,8 @@
 
 1. **Клонируйте репозиторий**
 ```bash
-git clone <repository-url>
-cd <project-directory>
+git clone https://github.com/AsadchiyViacheslav/MAX_EcoBot.git
+cd MAX_EcoBot
 ```
 
 2. **Создайте файл окружения**
