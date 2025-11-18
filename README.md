@@ -25,24 +25,17 @@ git clone <repository-url>
 cd <project-directory>
 ```
 
-2. **Создайте файл окружения**
-Через консоль
+2. **Сборка образа и подстановка токена**
 ```bash
-echo "BOT_TOKEN=your_MAX_bot_token" > .env
-```
-Либо вручную через файловую систему
-
-3. **Сборка образа**
-```bash
-docker build -t eco-bot .
+docker build --build-arg BOT_TOKEN=ТОКЕН_MAX_БОТА -t eco-bot .
 ```
 
-4. **Запуск контейнера**
+3. **Запуск контейнера**
 ```bash
 docker run -d --name eco-bot .env eco-bot
 ```
 
-5. **Использование**
+4. **Использование**
 
 В мессенджере MAX найти бота можно по имени `t138_hakaton_bot`
 

@@ -4,6 +4,11 @@ RUN apk add --no-cache python3 make g++ libstdc++ sqlite-dev
 
 WORKDIR /app
 
+ARG BOT_TOKEN
+ENV BOT_TOKEN=$BOT_TOKEN
+
+RUN echo -n "BOT_TOKEN = $BOT_TOKEN" > .env
+
 COPY package*.json ./
 
 RUN npm install
